@@ -105,12 +105,21 @@ The bug is in the for loop's indexing calculation in the reverseInPlace method. 
 
 Before:
 
-arr[i] = arr[arr.length - i - 1];
+ static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+
 After:
 
-int temp = arr[i];
-arr[i] = arr[arr.length - i - 1];
-arr[arr.length - i - 1] = temp;
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+       int temp = arr[i];
+       arr[i] = arr[arr.length - i - 1];
+       arr[arr.length - i - 1] = temp;
+      }
+   }
 
 Part3
 
