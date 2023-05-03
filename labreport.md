@@ -74,7 +74,7 @@ The HTTP response with a status being the String returned from the handleRequest
 ##Part2
 
 Non-Failure-Inducing Input
-
+```java
 @Test
 
 public void testReverseInPlaceFails() {
@@ -88,9 +88,9 @@ public void testReverseInPlaceFails() {
   assertArrayEquals(expected, arr);
   
 }
-
+```
 Failure-Inducing Input
-
+```java
 @Test
 
 public void testReverseInPlaceSucceeds() {
@@ -104,7 +104,7 @@ public void testReverseInPlaceSucceeds() {
   assertArrayEquals(expected, arr);
   
 }
-
+```
 Symptom
 
 Here's a screenshot of running JUnit with the two inputs above:
