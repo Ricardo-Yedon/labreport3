@@ -114,13 +114,13 @@ As we can see, the first test fails while the second test passes.
 Bug
 
 The bug is in the for loop's indexing calculation in the reverseInPlace method. Specifically, when calculating the index for the element to swap with arr[i], it uses arr.length - i - 1. This is incorrect because it swaps elements twice, which means that the array is only partially reversed. To fix this, we need to swap the elements in the first half of the array with the corresponding elements in the second half of the array. We can achieve this by changing the loop condition to:
-
+```java
 i < arr.length / 2
-
+```
 and swapping the elements at;
-
+```java
 arr[i] and arr[arr.length - i - 1].
-
+```
 Before:
 
 static void reverseInPlace(int[] arr) {
