@@ -1,4 +1,4 @@
-##Part1
+## Part1
 
 import java.net.URI;
 import java.util.ArrayList;
@@ -71,7 +71,7 @@ The value of the message field of the StringServerHandler instance is updated to
 The handleRequest method returns a String indicating that the message was added to the server.
 The HTTP response with a status being the String returned from the handleRequest method is sent back to the client (your web browser).
 
-##Part2
+## Part2
 
 Non-Failure-Inducing Input
 ```java
@@ -149,6 +149,6 @@ static void reverseInPlace(int[] arr) {
       
    }
 
-##Part3
+## Part3
 
 The biggest take away I learned is about how to creat a web server in the VScode. Another pretty useful technque is how to debug and analyze code more efficient, from the experience of lab3.
